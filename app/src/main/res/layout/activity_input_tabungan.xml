@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputTabungan"
+    android:orientation="vertical"
+    android:padding="16pt">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Tabungan"
+        android:id="@+id/txt_nmTbg"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nama Tabungan"
+        android:inputType="text"
+        android:id="@+id/ed_nmTbg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominal"
+        android:id="@+id/txt_nomTbg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8pt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nominal"
+        android:inputType="number"
+        android:id="@+id/ed_nomTbg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:id="@+id/txt_tglTbg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8pt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Tanggal"
+        android:inputType="date"
+        android:id="@+id/ed_tglTbg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catatan"
+        android:id="@+id/txt_cttTbg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8pt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Optional"
+        android:inputType="text"
+        android:id="@+id/ed_cttTbg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:id="@+id/btn_simpan"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corners2"/>
+
+    </RelativeLayout>
+</LinearLayout>
